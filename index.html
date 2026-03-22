@@ -1,22 +1,164 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Chai Tailwind</title>
+    <title>ChaiCSS Showcase</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="chai-bg-black chai-text-white">
-    <h1 class="chai-text-center chai-text-blue chai-p-10">
-      Chai Tailwind
-    </h1>
 
-    <div class="chai-bg-red chai-text-white chai-p-20 chai-rounded-10">
-      Hello World
+  <body class="chai-bg-black chai-text-white chai-p-10">
+    <!-- HEADER -->
+    <div style="padding: 10px"></div>
+    <div class="chai-text-center chai-mb-40">
+      <h1
+        class="chai-text-#50edcd chai-fs-48 chai-fw-bold chai-mb-10 chai-text-yellow"
+      >
+        ChaiCSS
+      </h1>
+      <p class="chai-text-white chai-fs-18">
+        A lightweight utility-first CSS engine built with JavaScript
+      </p>
     </div>
 
-    <button class="chai-bg-blue chai-text-white chai-p-10 chai-rounded-5">
-      Click Me
-    </button>
+    <!-- SINGLE CTA BUTTON -->
+    <div class="chai-flex chai-justify-center chai-mb-40">
+      <button
+        class="chai-bg-#50edcd chai-text-black chai-p-12 chai-rounded-8 chai-fw-bold chai-shadow"
+      >
+        Explore Utilities
+      </button>
+    </div>
+    <!-- CARDS SECTION -->
+    <div
+      class="chai-flex chai-gap-30 chai-flex-wrap chai-justify-center chai-font-poppins"
+    >
+      <!-- CARD 1 -->
+      <div class="chai-p-2 chai-bg-#50edcd chai-rounded-12">
+        <div class="chai-p-2 chai-bg-white chai-rounded-10">
+          <div
+            class="chai-bg-black chai-p-20 chai-rounded-8 chai-w-300 chai-text-white"
+          >
+            <h2 class="chai-text-#50edcd chai-fs-20 chai-mb-10">
+              How It Works
+            </h2>
+            <p class="chai-fs-14 chai-lh-1.6">
+              ChaiCSS scans the DOM, detects classes starting with <b>chai-</b>,
+              parses them into style objects, and applies inline styles
+              dynamically.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <p class="chai-text-pink "> Gonna do great things </p>
+      <!-- CARD 2 (existing) -->
+      <div class="chai-p-2 chai-bg-white chai-rounded-12">
+        <div class="chai-p-2 chai-bg-#50edcd chai-rounded-10">
+          <div
+            class="chai-bg-black chai-p-20 chai-rounded-8 chai-w-300 chai-text-white"
+          >
+            <h2 class="chai-text-#50edcd chai-fs-20 chai-mb-10">
+              Why ChaiCSS?
+            </h2>
+            <p class="chai-fs-14 chai-lh-1.6">
+              Utility classes like <b>chai-p-20</b> and <b>chai-bg-red</b> make
+              styling fast and reusable.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW CARD 3 (glass feel) -->
+      <div
+        class="chai-bg-#50edcd chai-p-20 chai-rounded-12 chai-w-300 chai-text-black chai-shadow"
+      >
+        <h2 class="chai-fs-20 chai-mb-10 chai-fw-bold">Fast Styling</h2>
+        <p class="chai-fs-14 chai-lh-1.6">
+          Apply styles instantly using class names without writing separate CSS
+          files.
+        </p>
+        <div class="chai-mt-10">
+          <span
+            class="chai-bg-black chai-text-white chai-p-5 chai-rounded-5 chai-fs-12"
+          >
+            Instant
+          </span>
+        </div>
+      </div>
+
+      <!-- NEW CARD 4 (border only style) -->
+      <div
+        class="chai-border-2 chai-p-20 chai-rounded-12 chai-w-300 chai-text-white"
+      >
+        <h2 class="chai-text-#50edcd chai-fs-20 chai-mb-10">Reusable</h2>
+        <p class="chai-fs-14 chai-lh-1.6">
+          Write once and reuse utility classes across multiple components
+          easily.
+        </p>
+      </div>
+
+      <!-- NEW CARD 5 (inverted style) -->
+      <div
+        class="chai-bg-white chai-text-black chai-p-20 chai-rounded-12 chai-w-300 chai-shadow"
+      >
+        <h2 class="chai-text-#50edcd chai-fs-20 chai-mb-10">Clean UI</h2>
+        <p class="chai-fs-14 chai-lh-1.6">
+          Helps maintain clean structure by keeping styles consistent and
+          predictable.
+        </p>
+        <button
+          class="chai-mt-10 chai-bg-#50edcd chai-text-black chai-p-8 chai-rounded-6"
+        >
+          Try Now
+        </button>
+      </div>
+    </div>
+
+    <!-- BUTTON SHOWCASE -->
+    <div class="chai-mt-50 chai-text-center">
+      <h2 class="chai-text-#50edcd chai-fs-22 chai-mb-20 chai-fw-bold">
+        Designs Achieved with ChaiCSS
+      </h2>
+
+      <div class="chai-flex chai-flex-wrap chai-gap-10 chai-justify-center">
+        <button
+          class="chai-bg-#50edcd chai-text-black chai-p-10 chai-rounded-6 chai-shadow"
+        >
+          Primary
+        </button>
+
+        <button class="chai-border-2 chai-p-10 chai-rounded-6 chai-text-white chai-bg-red">
+          Outline
+        </button>
+
+        <button class="chai-bg-pink chai-text-black chai-p-10 chai-rounded-20">
+          Pill
+        </button>
+
+        <button
+          class="chai-bg-black chai-text-#50edcd chai-border-2 chai-p-10 chai-rounded-6"
+        >
+          Ghost
+        </button>
+
+        <button
+          class="chai-bg-blue chai-text-black chai-p-10 chai-rounded-6"
+        >
+          Action
+        </button>
+
+        <button
+          class="chai-bg-white chai-text-black chai-p-10 chai-rounded-6 chai-shadow"
+        >
+          Soft
+        </button>
+      </div>
+    </div>
+
+    <div class="chai-text-center chai-mt-50 chai-text-gray chai-fs-14">
+      Built using ChaiCSS • Utility-first styling with JavaScript
+    </div>
 
     <script type="module" src="./src/main.js"></script>
   </body>

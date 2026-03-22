@@ -8,7 +8,7 @@ ChaiCSS lets you write small utility classes directly inside your HTML (like `ch
 
 ## Live Demo
 
-👉 [](https://github.com/shweta-nigam/ChaiCSS)
+👉 [Link](https://shweta-nigam.github.io/ChaiCSS/)
 
 ---
 

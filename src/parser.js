@@ -3,7 +3,7 @@ export function parseChaiClass(cls) {
   const parts = clean.split("-");
 
   const type = parts[0];
-  const value = parts[1];
+  const value = parts.slice(1).join("-");
 
   const colors = {
     red: "#ef4444",
@@ -12,7 +12,16 @@ export function parseChaiClass(cls) {
     yellow: "#eab308",
     black: "#000000",
     white: "#ffffff",
-    gray: "#6b7280"
+    gray: "#6b7280",
+    seaGreen: "#3baea0",
+    green1: "#50edcd",
+  };
+
+  const fonts = {
+    poppins: "'Poppins', sans-serif",
+    mono: "monospace",
+    serif: "serif",
+    sans: "sans-serif",
   };
 
   const styleMap = {
@@ -45,7 +54,7 @@ export function parseChaiClass(cls) {
         return {
           borderWidth: v + "px",
           borderColor: colors[parts[2]] || parts[2],
-          borderStyle: "solid"
+          borderStyle: "solid",
         };
       }
       if (v === "none") {
@@ -70,6 +79,9 @@ export function parseChaiClass(cls) {
     lh: (v) => ({ lineHeight: v }),
     ls: (v) => ({ letterSpacing: v + "px" }),
 
+    //
+    font: (v) => ({ fontFamily: fonts[v] || v }),
+
     // DISPLAY
     flex: () => ({ display: "flex" }),
     block: () => ({ display: "block" }),
@@ -77,7 +89,7 @@ export function parseChaiClass(cls) {
     hidden: () => ({ display: "none" }),
 
     gap: (v) => ({ gap: v + "px" }),
-    z: (v) => ({ zIndex: v })
+    z: (v) => ({ zIndex: v }),
   };
 
   // direct match

@@ -1,5 +1,5 @@
 import { runChai } from "./engine.js";
-import { applyChaiStyles } from "./applyStyles.js";
+import { applyChaiStyles } from "./applyStyle.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   runChai();

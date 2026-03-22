@@ -20,6 +20,8 @@ export function applyChaiStyles(element) {
       }
     }
 
+    // element.style.padding = "10px"
+
     element.classList.remove(cls);
   });
 }
