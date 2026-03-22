@@ -1,4 +1,4 @@
-import { applyChaiStyles } from "./temp.js";
+import { applyChaiStyles } from "./applyStyles.js";
 
 export function runChai() {
   const elements = document.querySelectorAll("*");
